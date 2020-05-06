@@ -1,0 +1,30 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Smoke suite" parallel="true" time-out="5000" verbose="1" >
+    <test name="Groups">
+        <groups>
+            <run>
+                <include name="Smoke Post Setup" />
+                <include name="Shared User flow" />
+                <include name="Shared User in Device Settings" />
+            </run>
+        </groups>
+        <packages>
+            <package name="com.example" />
+        </packages>
+        <classes>
+            <class name="com.example.TestWithGroups">
+                <methods>
+                    <exclude name="Regression Post Setup"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+    <test name="Parametrized">
+        <classes>
+            <class name="com.example.TestWithParameters">
+                <parameter name="testType" value="Parametrized test"></parameter>
+            </class>
+        </classes>
+    </test>
+</suite>
+

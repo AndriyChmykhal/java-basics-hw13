@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="com.example.TestWithGroups" tests="3" skipped="0" failures="0" errors="0" timestamp="2020-05-06T10:32:05" hostname="Andriy.chmykal" time="0.003">
+  <properties/>
+  <testcase name="loginWithInvalidPassword" classname="com.example.TestWithGroups" time="0.001"/>
+  <testcase name="loginWithValidPassword" classname="com.example.TestWithGroups" time="0.0"/>
+  <testcase name="logout" classname="com.example.TestWithGroups" time="0.0"/>
+  <system-out><![CDATA[Login
+Login
+Wrong Password
+Logged In Successfully
+User is logged out
+]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
